@@ -5,9 +5,18 @@
     align-items: center;
     justify-content: center;
     margin-top: 1.875rem;
+    background-color: #ffffff;
 }
 @include for-size(cardAlign) {
+    .cardContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .cardContainer:not(:last-child) {
         margin-bottom: 1rem;
     }
+}
+
+.cardContainer:last-child {
+    margin-bottom: 1.875rem;
 }

@@ -9,6 +9,8 @@
 
     @include for-size(cardAlign) {
         flex-direction: row;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
     }
 }
 
