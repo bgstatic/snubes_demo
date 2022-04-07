@@ -65,13 +65,10 @@ const Header = () => {
                             {navigation.map((item) => (
                                 item.isDropdown ? (
                                     <li key={item.url} className={styles.navDropdown}>
-                                        <Link href={item.url} className={styles.mobileNavItems}>
-                                            <NavDropdown title={item.label} className={styles.mobileNavDropdown} id="navbarScrollingDropdown">
-                                                <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
-                                                <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
-                                            </NavDropdown>
-                                        </Link>
-
+                                        <NavDropdown title={item.label} className={styles.mobileNavDropdown} id="navbarScrollingDropdown">
+                                            <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
+                                            <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
+                                        </NavDropdown>
                                     </li>
                                 ) :
                                     (<li
