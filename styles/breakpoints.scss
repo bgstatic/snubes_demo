@@ -9,6 +9,14 @@
         @media (min-width: 414px) {
             @content;
         }
+    } @else if $size == backgroundAlignMobile {
+        @media (max-width: 430px) {
+            @content;
+        }
+    } @else if $size == cardAlign {
+        @media (max-width: 760px) {
+            @content;
+        }
     } @else if $size == tbl {
         @media (min-width: 768px) {
             @content;
@@ -21,6 +29,18 @@
         @media (min-width: 970px) {
             @content;
         }
+    } @else if $size == backgroundAlignDesktop {
+        @media (min-width: 840px) {
+            @content;
+        }
+    } @else if $size == navbarAlign {
+        @media (max-width: 990px) {
+            @content;
+        }
+    } @else if $size == backgroundAlignTablet {
+        @media (max-width: 1024px) {
+            @content;
+        }
     } @else if $size == lg {
         @media (min-width: 1140px) {
             @content;
@@ -31,14 +51,6 @@
         }
     } @else if $size == specificTablets {
         @media (width: 800px) and (height: 1280px), (width: 1024px) and (height: 1366px) {
-            @content;
-        }
-    } @else if $size == navbarAlign {
-        @media (max-width: 990px) {
-            @content;
-        }
-    } @else if $size == cardAlign {
-        @media (max-width: 760px) {
             @content;
         }
     }
