@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import * as styles from './whySnubes.module.scss'
-import useWindowDimensions from '../../utils/useWindowDimensions';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 function WhySnubes() {
-    const tablet_ALIGN = 1024;
-    const windowDimensions = useWindowDimensions();
+    const background_ALIGN = 1024;
+    const { width } = useWindowDimensions();
     return (
         <Container fluid className={styles.container}>
             <div className={styles.textContainer}>
-                <Row className={windowDimensions?.innerWidth <= tablet_ALIGN ? 'flex-column' : 'flex-column align-items-center'}>
+                <Row className={width <= background_ALIGN ? 'flex-column' : 'flex-column align-items-center'}>
                     <Col className={styles.mainTitleContainer} xs={12} sm={12} md={6} lg={6}>
                         <h1 className={styles.mainTitle}>Why Snubes?</h1>
                     </Col>
