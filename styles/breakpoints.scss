@@ -1,0 +1,45 @@
+@import "./_variables";
+
+@mixin for-size($size) {
+    @if $size == xs {
+        @media (max-width: 414px) {
+            @content;
+        }
+    } @else if $size == sm {
+        @media (min-width: 414px) {
+            @content;
+        }
+    } @else if $size == tbl {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $size == mobileAndTablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $size == md {
+        @media (min-width: 970px) {
+            @content;
+        }
+    } @else if $size == lg {
+        @media (min-width: 1140px) {
+            @content;
+        }
+    } @else if $size == xl {
+        @media (min-width: 1920px) {
+            @content;
+        }
+    } @else if $size == specificTablets {
+        @media (width: 800px) and (height: 1280px), (width: 1024px) and (height: 1366px) {
+            @content;
+        }
+    } @else if $size == navbarAlign {
+        @media (max-width: 990px) {
+            @content;
+        }
+    } @else if $size == cardAlign {
+        @media (max-width: 760px) {
+            @content;
+        }
+    }
+}
