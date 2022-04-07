@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { Container, Navbar, Nav, NavDropdown, Offcanvas, } from 'react-bootstrap'
 import useWindowDimensions from '../../utils/useWindowDimensions'
