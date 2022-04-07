@@ -13,6 +13,10 @@
         @media (max-width: 430px) {
             @content;
         }
+    } @else if $size == backgroundAlignDontShow {
+        @media (max-width: 760px) {
+            @content;
+        }
     } @else if $size == cardAlign {
         @media (max-width: 760px) {
             @content;
@@ -47,10 +51,6 @@
         }
     } @else if $size == xl {
         @media (min-width: 1920px) {
-            @content;
-        }
-    } @else if $size == specificTablets {
-        @media (width: 800px) and (height: 1280px), (width: 1024px) and (height: 1366px) {
             @content;
         }
     }
