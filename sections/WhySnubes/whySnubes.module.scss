@@ -32,7 +32,7 @@
         margin-left: 1.875rem;
         margin-top: 1.875rem;
     }
-    @include for-size(mobile) {
+    @include for-size(backgroundAlignMobile) {
         margin-left: 0.9rem;
     }
 }
