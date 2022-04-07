@@ -1,0 +1,12 @@
+@import "../../styles//breakpoints.scss";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@include for-size(cardAlign) {
+    .cardContainer:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
