@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     height: 70px;
-    padding: 0 !important;
+    padding: 0;
     @include for-size(navbarAlign) {
         border-bottom: 1px solid $navbar_mobile_border;
     }
@@ -19,7 +19,7 @@
             padding-left: 0;
             padding-right: 0;
             margin-left: 0.9rem;
-            width: 100%;
+            margin-right: 0.9rem;
         }
         .navigation {
             @include for-size(navbarAlign) {
@@ -61,14 +61,8 @@
             }
         }
         button[aria-controls="offcanvasNavbar"] {
-            background-color: none;
-            color: none;
-            margin-top: 6px;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 32'%3e%3cpath stroke='rgba%28170, 187, 203, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-            @include for-size(navbarAlign) {
-                position: relative;
-                //left: 10px;
-            }
+            border: none;
+            padding: 0;
         }
     }
 }

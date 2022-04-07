@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Container, Navbar, Nav, NavDropdown, Offcanvas, } from 'react-bootstrap'
-import useWindowDimensions from '../../utils/useWindowDimensions'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import { navigation } from '../../const/layout-data'
 import * as styles from './header.module.scss'
 
 const Header = () => {
     const [toggleMobileMenu, setToggleMobileMenu] = useState(false)
     const NAVBAR_ALIGN = 990;
-    const windowDimensions = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     return (
         <Navbar expand="lg" className={styles.header} variant="dark">
-            <Container fluid={windowDimensions?.innerWidth <= NAVBAR_ALIGN} className={styles.container}>
+            <Container fluid={width <= NAVBAR_ALIGN} className={styles.container}>
                 <Link href={'/'}>
                     <Navbar.Brand>
-                        <img src={windowDimensions?.innerWidth <= NAVBAR_ALIGN ? "/images/components/Navbar/snubes-logo-mobile.svg" : "/images/components/Navbar/snubes-logo.svg"} alt="Snubes" className={styles.logo} />
+                        <img src={width <= NAVBAR_ALIGN ? "/images/components/Navbar/snubes-logo-mobile.svg" : "/images/components/Navbar/snubes-logo.svg"} alt="Snubes" className={styles.logo} />
                     </Navbar.Brand>
                 </Link>
                 <nav className={styles.navigation}>
@@ -42,7 +42,9 @@ const Header = () => {
                 <Navbar.Toggle
                     aria-controls="offcanvasNavbar"
                     onClick={() => setToggleMobileMenu(true)}
-                />
+                >
+                    <img src={"/images/components/Navbar/navbar-toggle.svg"} alt="navbar-toggle" className={styles.logo} />
+                </Navbar.Toggle>
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
