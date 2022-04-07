@@ -1,0 +1,61 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.875rem;
+    background-image: url("../../public/images/sections/WhySnubes/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+
+    @include for-size(mobileAndTablet) {
+        background-image: none;
+    }
+    @include for-size(tbl) {
+        background-image: url("../../public/images/sections/WhySnubes/background-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 38.5rem;
+    }
+}
+
+.textContainer {
+    margin-top: 3.75rem;
+}
+
+.mainTitleContainer {
+    margin-bottom: 2.5rem;
+}
+
+.mainTitle {
+    color: $text_color;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.textGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subtitle {
+    color: $text_color;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: $text_color;
+    font-size: 1.125rem;
+    font-weight: normal;
+    flex-wrap: wrap;
+}
+
+.textGroup:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
