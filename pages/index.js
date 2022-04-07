@@ -6,16 +6,14 @@ import WhySnubes from '../sections/WhySnubes/'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>Snubes Demo</title>
         <meta name="description" content="Snubes Demo" />
         <link rel="icon" href="/snubes.ico" />
       </Head>
-      <Layout>
-        <Features />
-        <WhySnubes />
-      </Layout>
-    </div>
+      <Features />
+      <WhySnubes />
+    </Layout>
   )
 }
