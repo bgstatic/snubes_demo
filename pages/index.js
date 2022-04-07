@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Layout from '../components/Layout/'
+import dynamic from "next/dynamic";
 import Features from '../sections/Features/'
 import WhySnubes from '../sections/WhySnubes/'
+
+const Layout = dynamic(() => import("../components/Layout"), { ssr: false });
+
 
 export default function Home() {
   return (
