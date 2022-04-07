@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1.875rem;
 }
 @include for-size(cardAlign) {
     .cardContainer:not(:last-child) {
