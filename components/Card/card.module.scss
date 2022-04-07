@@ -1,0 +1,56 @@
+@import "../../styles/colors.scss";
+@import "../../styles/breakpoints.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include for-size(cardAlign) {
+        flex-direction: row;
+    }
+}
+
+.logo {
+    height: 82px;
+    width: 82px;
+    object-fit: contain;
+}
+
+.cardTitle {
+    padding-top: 10px;
+    color: $text_color;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-align: center;
+    @include for-size(cardAlign) {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+.cardDescription {
+    font-size: 1.125rem;
+    color: $text_color;
+    text-align: center;
+    margin-bottom: 0;
+    @include for-size(cardAlign) {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+.cardTextContainer {
+    display: flex;
+    flex-direction: column;
+    @include for-size(cardAlign) {
+        margin-left: 20px;
+    }
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
