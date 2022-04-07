@@ -22,7 +22,7 @@ const Header = () => {
                     <Container className="d-none d-md-flex align-items-center" as="ul">
                         {navigation.map((item) => (
                             item.isDropdown ? (
-                                <li key={item.url} className={styles.navDropdown}>
+                                <li key={item.label} className={styles.navDropdown}>
                                     <NavDropdown title={item.label} id="navbarScrollingDropdown">
                                         <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
                                         <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
