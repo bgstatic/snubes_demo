@@ -16,8 +16,9 @@
         align-items: center;
         width: 100%;
         @include for-size(navbarAlign) {
-            margin-left: 15px;
-            margin-right: 15px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0.9rem;
             width: 100%;
         }
         .navigation {
@@ -66,7 +67,7 @@
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 32'%3e%3cpath stroke='rgba%28170, 187, 203, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
             @include for-size(navbarAlign) {
                 position: relative;
-                left: 20px;
+                //left: 10px;
             }
         }
     }
