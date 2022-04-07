@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     return (
         <>
             <Header />
-            <main id="layout">
+            <main id="layout" className='overflow-hidden'>
                 <>
                     {children}
                 </>
