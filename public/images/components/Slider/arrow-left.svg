@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24" fill="#F9F9F9"/>
+        <g stroke="#ABC" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M12 11.5L23.52 0.5" transform="rotate(90 8 20)"/>
+            <path d="M0.48 11.5L12 0.5" transform="rotate(90 8 20) matrix(1 0 0 -1 0 12)"/>
+        </g>
+    </g>
+</svg>
