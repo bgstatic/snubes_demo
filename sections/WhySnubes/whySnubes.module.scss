@@ -4,7 +4,6 @@
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 1.875rem;
     @include for-size(backgroundAlignDesktop) {
         background-image: url("../../public/images/sections/WhySnubes/background.jpg");
         background-repeat: no-repeat;
@@ -15,27 +14,32 @@
     @include for-size(backgroundAlignTablet) {
         background-image: url("../../public/images/sections/WhySnubes/background-mobile.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         padding-left: 0;
-        height: 38.5rem;
+        height: auto;
     }
     @include for-size(backgroundAlignDontShow) {
         background-image: none;
         padding-left: 0;
         padding-right: 0;
+        height: auto;
         background-color: #ffffff;
     }
 }
 
 .textContainer {
-    margin-top: 3.75rem;
-    @include for-size(backgroundAlignTablet) {
-        margin-left: 1.875rem;
-        margin-top: 1.875rem;
+    @include for-size(backgroundAlignDesktop) {
+        margin-top: 3.75rem;
     }
     @include for-size(backgroundAlignMobile) {
         margin-left: 0.9rem;
         margin-right: 0.9rem;
+    }
+    @include for-size(backgroundAlignTablet) {
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
     }
 }
 
