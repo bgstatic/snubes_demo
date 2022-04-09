@@ -6,7 +6,7 @@ import * as styles from './features.module.scss'
 function Features() {
     return (
         <Container className={styles.container}>
-            <Row className="justify-content-md-center" xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Row>
                 <Col className={styles.cardContainer} xs={12} sm={12} md={4} lg={4} xl={4} >
                     <Card
                         title="Sign up for free"
