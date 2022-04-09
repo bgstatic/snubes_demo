@@ -22,6 +22,7 @@ export default function Home() {
       <WhySnubes />
       <div className={styles.line}></div>
       <Testimonials />
+      <div className={styles.line}></div>
     </Layout>
   )
 }
