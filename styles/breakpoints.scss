@@ -13,8 +13,16 @@
         @media (max-width: 430px) {
             @content;
         }
+    } @else if $size == footerAlignMobile {
+        @media (max-width: 576px) {
+            @content;
+        }
     } @else if $size == backgroundAlignDontShow {
         @media (max-width: 760px) {
+            @content;
+        }
+    } @else if $size == mobileAndTablet2 {
+        @media (max-width: 767px) {
             @content;
         }
     } @else if $size == cardAlign {

@@ -1,8 +1,15 @@
+// Bootstrap import
 @import "~bootstrap/scss/bootstrap";
+
+// Swiper import
 @import "swiper/scss";
 @import "swiper/scss/navigation";
 @import "swiper/scss/pagination";
 
+// Google Fonts import
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+// Misc
 @import "./colors.scss";
 @import "./breakpoints.scss";
 
