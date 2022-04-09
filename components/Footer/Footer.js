@@ -6,12 +6,12 @@ import * as styles from './footer.module.scss'
 const Footer = () => {
     return (
         <footer className={styles.footerContainer}>
-            <Container fluid className={styles.container}>
-                <Row className='d-flex'>
-                    <Col className={styles.bestOfInternetCol} xs={0} sm={3} md={3} lg={3} xl={3}>
+            <Container className={styles.container}>
+                <Row className='d-flex w-100'>
+                    <Col className={styles.bestOfInternetCol} sm={3} md={3} lg={3} xl={3}>
                         <img src={"/images/sections/FrequentlyAskedQuestions/best-of-internet.jpg"} alt="best-of-internet-service" />
                     </Col>
-                    <Col className={styles.footerNavigation} xs={0} sm={4} md={3} lg={3} xl={3}>
+                    <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
                         <Link href={"/about-us"}>
                             <p>About Us</p>
                         </Link>
@@ -22,7 +22,7 @@ const Footer = () => {
                             <p>FAQ</p>
                         </Link>
                     </Col>
-                    <Col className={styles.footerNavigation} xs={0} sm={4} md={3} lg={3} xl={3}>
+                    <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
                         <Link href={"/imprint"}>
                             <p>Imprint</p>
                         </Link>
@@ -33,7 +33,7 @@ const Footer = () => {
                             <p>Privacy Policy</p>
                         </Link>
                     </Col>
-                    <Col className={styles.footerNavigation} xs={0} sm={4} md={3} lg={3} xl={3}>
+                    <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
                         <Link href={"mailto:support@snubes.com"}>
                             <p>support@snubes.com</p>
                         </Link>
@@ -46,6 +46,9 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+            <div className={styles.footerCaption}>
+                <p>© 2022 Snubes GmbH All Rights Reserved.</p>
+            </div>
         </footer>
     )
 }

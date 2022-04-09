@@ -1,20 +1,21 @@
 @import "../../styles/breakpoints.scss";
 @import "../../styles/colors.scss";
-@import "../../styles/variables";
 
 .footerContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $footer_background;
+}
+.container {
+    display: flex;
+    align-items: center;
     height: 14rem;
     @include for-size(footerAlignMobile) {
         height: 24rem;
         text-align: center;
     }
-}
-
-.container {
     @include for-size(mobileAndTablet) {
         display: flex;
         align-items: center;
@@ -30,17 +31,12 @@
 }
 
 .footerNavigation {
-    padding-right: 10rem;
     p {
         font-size: 1rem;
-        font-family: $roboto-text;
         font-weight: 500;
         color: #ffffff;
         margin-bottom: 0;
         width: max-content;
-    }
-    @include for-size(mobileAndTablet2) {
-        padding-right: 0rem;
     }
 
     p:not(:last-child) {
@@ -58,7 +54,6 @@
 .bestOfInternetCol {
     display: flex;
     align-items: center;
-    justify-content: center;
     img {
         display: block;
         height: 5rem;
@@ -66,5 +61,24 @@
     }
     @include for-size(mobileAndTablet2) {
         display: none;
+    }
+}
+.footerCaption {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding-top: 2rem;
+    padding-bottom: 0.875rem;
+    @include for-size(mobileAndTablet) {
+        padding-bottom: 6rem;
+    }
+    @include for-size(footerAlignMobile) {
+        padding-bottom: 3rem;
+    }
+    p {
+        font-size: 0.9rem;
+        color: $footer_background;
     }
 }
