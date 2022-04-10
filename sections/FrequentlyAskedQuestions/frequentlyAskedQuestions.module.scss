@@ -1,0 +1,125 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    @include for-size(backgroundAlignTablet) {
+        padding-left: 0;
+        height: auto;
+    }
+    @include for-size(backgroundAlignDontShow) {
+        background-image: none;
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+        background-color: #ffffff;
+    }
+    @include for-size(alignFormBoxDesktop) {
+        flex-direction: row;
+    }
+}
+
+.textContainer {
+    @include for-size(backgroundAlignDesktop) {
+        margin-top: 3.75rem;
+    }
+    @include for-size(backgroundAlignMobile) {
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+        margin-top: 1.875rem !important;
+        margin-bottom: 2.125rem !important;
+    }
+    @include for-size(backgroundAlignTablet) {
+        margin-left: 1.875rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.mainTitleContainer {
+    margin-bottom: 2.5rem;
+    @include for-size(backgroundAlignMobile) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include for-size(alignFormBoxTablet) {
+        width: auto;
+    }
+}
+
+.mainTitle {
+    color: $text_color;
+    font-size: 1.75rem !important;
+}
+.textGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include for-size(backgroundAlignDesktop) {
+    }
+    @include for-size(backgroundAlignMobile) {
+        padding-left: 0;
+    }
+    @include for-size(alignFormBoxTablet) {
+        width: auto;
+        margin-right: 1.5rem;
+    }
+}
+
+.subtitle {
+    color: $text_color;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: $text_color;
+    font-size: 1.125rem;
+    font-weight: normal;
+    flex-wrap: wrap;
+    @include for-size(backgroundAlignDesktop) {
+    }
+    @include for-size(backgroundAlignMobile) {
+        font-size: 1rem;
+    }
+    @include for-size(backgroundAlignTablet) {
+    }
+}
+
+.textGroup:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.bestOfInternet {
+    display: flex;
+    @include for-size(backgroundAlignMobile) {
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include for-size(alignFormBoxTablet) {
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    @include for-size(alignFormBoxDesktop) {
+        justify-content: flex-start;
+    }
+}
+
+.formboxContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    @include for-size(alignFormBoxDesktop) {
+        width: 50%;
+        height: auto;
+    }
+}
