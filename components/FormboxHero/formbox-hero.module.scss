@@ -1,0 +1,126 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/_variables.scss";
+
+.formboxContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    border-radius: 4px;
+    background-color: #ffffff;
+    @include for-size(backgroundAlignMobile) {
+        padding: 0;
+    }
+}
+
+.mainTitle {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    color: $text_color;
+
+    @include for-size(backgroundAlignMobile) {
+        font-size: 1.5rem;
+        text-align: left !important;
+    }
+    @include for-size(navbarAlign) {
+        text-align: center;
+    }
+    @media (width: 540px) {
+        font-size: 1.4rem;
+    }
+}
+
+.mainDescription {
+    font-size: 1.125rem;
+    text-align: center;
+    color: $text_color;
+    @include for-size(backgroundAlignMobile) {
+        display: none;
+    }
+    @media (width: 540px) {
+        font-size: 1rem;
+    }
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: baseline;
+    }
+
+    div:not(.phoneInputContainer) {
+        margin-top: 0.875rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        @include for-size(cardAlign) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .phoneInputContainer {
+        width: 100%;
+    }
+    .companyContainer {
+        @media screen and (min-width: 768px) {
+            label {
+                width: 43px;
+                position: relative;
+                right: 20px;
+            }
+        }
+    }
+
+    input {
+        padding: 0.5rem;
+        width: 100%;
+        height: 3rem;
+        border: 1px solid $navbar_mobile_border;
+        border-radius: 4px;
+    }
+    select {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+        height: 3rem;
+        border: 1px solid $navbar_mobile_border;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+    }
+    label {
+        color: $text_color;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+    }
+    button {
+        margin-top: 1.25rem;
+        border-style: none;
+        border-radius: 4px;
+        background-color: $formbox_background;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: #ffffff;
+        font-size: 1.125rem;
+        font-weight: bold;
+        width: 17rem;
+        margin-left: auto;
+        margin-right: auto;
+        @include for-size(cardAlign) {
+            margin-bottom: 1.25rem;
+        }
+        @include for-size(backgroundAlignMobile) {
+            width: 80%;
+        }
+    }
+    ::placeholder {
+        color: $navbar_mobile_border;
+        font-size: 1.125rem;
+    }
+}
