@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import dynamic from "next/dynamic";
+import Hero from '../sections/Hero';
 import Features from '../sections/Features/'
 import WhySnubes from '../sections/WhySnubes/'
 import Testimonials from '../sections/Testimonials';
@@ -17,6 +18,7 @@ export default function Home() {
         <meta name="description" content="Snubes Demo" />
         <link rel="icon" href="/snubes.ico" />
       </Head>
+      <Hero />
       <div className={styles.line}></div>
       <Features />
       <div className={styles.line}></div>
