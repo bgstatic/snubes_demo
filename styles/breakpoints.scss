@@ -62,11 +62,11 @@
             @content;
         }
     } @else if $size == alignFormBoxTablet {
-        @media (min-width: 540px) and (max-width: 1024px) {
+        @media (min-width: 540px) and (max-width: 1200px) {
             @content;
         }
     } @else if $size == alignFormBoxDesktop {
-        @media (min-width: 1025px) {
+        @media (min-width: 1200px) {
             @content;
         }
     }
