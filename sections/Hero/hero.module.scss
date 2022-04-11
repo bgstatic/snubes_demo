@@ -1,0 +1,121 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+.informationCol {
+    // height: 100%;
+    // width: 100%;
+    @include for-size(backgroundAlignTablet) {
+        background-image: url("../../public/images/sections/Hero/hero-background-tablet.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        width: 100%;
+    }
+    @include for-size(backgroundAlignMobile) {
+        background-image: url("../../public/images/sections/Hero/hero-background-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
+}
+
+.heroContentContainer {
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    @include for-size(alignFormBoxTablet) {
+        margin: 0;
+    }
+    @include for-size(cardAlign) {
+        margin-top: 0.9rem;
+    }
+    @include for-size(backgroundAlignMobile) {
+        margin-bottom: 0;
+    }
+}
+
+.heroContainer {
+    background-image: url("../../public/images/sections/Hero/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    @include for-size(alignFormBoxTablet) {
+        background-image: none;
+        padding: 0;
+    }
+    @include for-size(backgroundAlignMobile) {
+        background-image: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.mainInformationContainer {
+    display: flex;
+    flex-direction: column;
+    @include for-size(backgroundAlignTablet) {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (width: 540px) {
+        width: 100%;
+    }
+    @include for-size(backgroundAlignMobile) {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+.informationContainer {
+    display: flex;
+    justify-content: space-between;
+    @include for-size(backgroundAlignMobile) {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        align-self: center;
+        column-gap: 2.875rem;
+        row-gap: 0.938rem;
+    }
+    @include for-size(backgroundAlignTablet) {
+        justify-content: space-evenly;
+    }
+}
+
+.preInfo {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    @include for-size(backgroundAlignMobile) {
+        text-align: center !important;
+    }
+    @include for-size(backgroundAlignTablet) {
+        text-align: center;
+    }
+}
+
+.title {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.description {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.infoItemContainer {
+    @include for-size(backgroundAlignMobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
