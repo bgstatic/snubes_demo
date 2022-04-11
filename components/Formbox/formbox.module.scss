@@ -14,16 +14,6 @@
     flex-direction: column;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    input,
-    label {
-        display: block;
-    }
-}
-
 .titleContainer {
     background-color: $formbox_background;
     border-top-left-radius: 4px;
@@ -31,8 +21,8 @@
     @include for-size(backgroundAlignDesktop) {
     }
     @include for-size(backgroundAlignMobile) {
-        margin-left: 0.9rem;
-        margin-right: 0.9rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     @include for-size(backgroundAlignTablet) {
         margin-left: 1.3rem;
@@ -41,7 +31,6 @@
 }
 
 .title {
-    font-family: $roboto_text;
     font-size: 1.5rem;
     color: #ffffff;
     padding-top: 1.25rem;
@@ -60,8 +49,8 @@
     @include for-size(backgroundAlignDesktop) {
     }
     @include for-size(backgroundAlignMobile) {
-        margin-left: 0.9rem;
-        margin-right: 0.9rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     @include for-size(backgroundAlignTablet) {
         margin-left: 1.3rem;
@@ -70,6 +59,13 @@
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input,
+    label {
+        display: block;
+    }
     input {
         width: 100%;
         padding: 0.5rem;
@@ -78,10 +74,21 @@
         border-radius: 4px;
     }
 
+    .companyContainer {
+        @media screen and (min-width: 540px) and (max-width: 1200px) {
+            label {
+                width: 43px;
+                position: relative;
+                right: 20px;
+            }
+        }
+    }
+
     label {
         font-size: 1rem;
         color: $text_color;
         margin-bottom: 0.5rem;
+        margin-right: 1rem;
         @include for-size(backgroundAlignTablet) {
             margin-right: 0.875rem;
         }
@@ -112,18 +119,37 @@
             display: flex;
             flex-direction: row;
             width: 60%;
-            align-items: center;
+            align-items: baseline;
         }
 
         button {
             width: 40% !important;
-            margin-left: 8%;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
     }
     @include for-size(alignFormBoxDesktop) {
+        .companyContainer {
+            margin-top: 2.25rem;
+        }
+        div:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+
+        .phoneInputContainer {
+            margin-top: 0rem !important;
+        }
+
+        .emailContainer {
+            margin-bottom: 1.875rem;
+        }
+
         button {
-            width: 100% !important;
-            margin-left: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 1.875rem !important;
+            width: 85% !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
     }
 
@@ -136,8 +162,10 @@
     }
 
     select {
-        padding: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         position: relative;
+        height: 3rem;
         border: 1px solid $navbar_mobile_border;
         border-radius: 4px;
         margin-right: 0.5rem;
@@ -154,7 +182,7 @@
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         color: #ffffff;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         font-weight: bold;
         @include for-size(backgroundAlignDesktop) {
             width: 60%;
