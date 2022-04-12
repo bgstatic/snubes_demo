@@ -53,12 +53,8 @@
         @media (max-width: 1024px) {
             @content;
         }
-    } @else if $size == lg {
-        @media (min-width: 1140px) {
-            @content;
-        }
-    } @else if $size == xl {
-        @media (min-width: 1920px) {
+    } @else if $size == backgroundAlignHeroTablet {
+        @media (max-width: 1280px) {
             @content;
         }
     } @else if $size == alignFormBoxTablet {
