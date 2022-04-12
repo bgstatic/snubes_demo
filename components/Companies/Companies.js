@@ -1,14 +1,17 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { companies } from '../../const/layout-data'
-
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import * as styles from "./companies.module.scss"
 
 function Companies() {
+    const { width } = useWindowDimensions();
+    const flex_ALIGN = 820;
     return (
-        <Row className='d-flex justify-content-center align-items-center mt-4'>
+        <Row id={"companies-row"}
+            className={width >= flex_ALIGN ? 'd-flex justify-content-evenly align-items-center' : "d-flex justify-content-center"}>
             {companies.map((company, index) => (
-                <Col key={company.label} className={styles.company} xs={6} sm={5} md={4} lg={2}>
+                <Col id={company.label} key={company.label} className={styles.companyCol} xs={6} sm={5} md={4} lg={2}>
                     <img src={company.path} alt={company.label} className={styles.logo} />
                 </Col>
             ))}
