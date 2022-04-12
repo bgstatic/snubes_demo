@@ -1,33 +1,25 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Card from '../../components/Card'
+import { featuresInformation } from '../../const/layout-data'
 import * as styles from './features.module.scss'
+
 
 function Features() {
     return (
         <Container className={styles.container}>
             <Row>
-                <Col className={styles.cardContainer} xs={12} sm={12} md={4} lg={4} xl={4} >
-                    <Card
-                        title="Sign up for free"
-                        description="Signing up and setting up your project takes less than 5 minutes"
-                        logoSource={'/images/sections/Features/signup.svg'}
-                    />
-                </Col>
-                <Col className={styles.cardContainer} xs={12} sm={12} md={4} lg={4} xl={4}>
-                    <Card
-                        title="Source smarter"
-                        description="Our data-based AI and our experts will help you find exactly what you are looking for"
-                        logoSource={'/images/sections/Features/source-logo.svg'}
-                    />
-                </Col>
-                <Col className={styles.cardContainer} xs={12} sm={12} md={4} lg={4} xl={4}>
-                    <Card
-                        title="Receive offers"
-                        description="With our insights you always receive high-quality proposals at the best price"
-                        logoSource={'/images/sections/Features/offers.svg'}
-                    />
-                </Col>
+                {
+                    featuresInformation.map((item, index) => (
+                        <Col key={item.title} className={styles.cardContainer} xs={12} sm={12} md={4} lg={4} xl={4} >
+                            <Card
+                                title={item.title}
+                                description={item.description}
+                                logoSource={item.logoSource}
+                            />
+                        </Col>
+                    ))
+                }
             </Row>
         </Container>
     )
