@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 import * as styles from './footer.module.scss'
+import { footerNavigation } from '../../const/layout-data'
 
 const Footer = () => {
     return (
@@ -12,34 +13,31 @@ const Footer = () => {
                         <img src={"/images/sections/FrequentlyAskedQuestions/best-of-internet.jpg"} alt="best-of-internet-service" />
                     </Col>
                     <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
-                        <Link href={"/about-us"}>
-                            <p>About Us</p>
-                        </Link>
-                        <Link href={"/become-a-partner"}>
-                            <p>Become a Partner</p>
-                        </Link>
-                        <Link href={"/faq"}>
-                            <p>FAQ</p>
-                        </Link>
+                        {
+                            footerNavigation.firstColumn.map((item, index) => (
+                                <Link key={item.label} href={item.url}>
+                                    <p>{item.label}</p>
+                                </Link>
+                            ))
+                        }
                     </Col>
                     <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
-                        <Link href={"/imprint"}>
-                            <p>Imprint</p>
-                        </Link>
-                        <Link href={"/terms-and-conditions"}>
-                            <p>Terms & Conditions</p>
-                        </Link>
-                        <Link href={"/privacy-policy"}>
-                            <p>Privacy Policy</p>
-                        </Link>
+                        {
+                            footerNavigation.secondColumn.map((item, index) => (
+                                <Link key={item.label} href={item.url}>
+                                    <p>{item.label}</p>
+                                </Link>
+                            ))
+                        }
                     </Col>
                     <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
-                        <Link href={"mailto:support@snubes.com"}>
-                            <p>support@snubes.com</p>
-                        </Link>
-                        <Link href={"tel:+4903055645327"}>
-                            <p>+49 (0) 305 5645327</p>
-                        </Link>
+                        {
+                            footerNavigation.thirdColumn.map((item, index) => (
+                                <Link key={item.label} href={item.url}>
+                                    <p>{item.label}</p>
+                                </Link>
+                            ))
+                        }
                         <div className={styles.footerIconContainer}>
                             {/* <img className={styles.footerLogo} src="/images/components/Footer/linkedin.jpg" alt="linkedin" /> */}
                         </div>
