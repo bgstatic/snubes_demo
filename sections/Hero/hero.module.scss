@@ -2,11 +2,16 @@
 @import "../../styles/colors.scss";
 
 .informationCol {
-    // height: 100%;
-    // width: 100%;
-    @include for-size(backgroundAlignTablet) {
+    background-size: cover;
+    @include for-size(alignFormBoxTablet) {
         background-image: url("../../public/images/sections/Hero/hero-background-tablet.jpg");
-        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        width: 100%;
+    }
+    @include for-size(backgroundAlignHeroTablet) {
+        background-image: url("../../public/images/sections/Hero/hero-background-tablet.jpg");
         background-repeat: no-repeat;
         padding-top: 2.8rem;
         padding-bottom: 2.8rem;
@@ -14,10 +19,14 @@
     }
     @include for-size(backgroundAlignMobile) {
         background-image: url("../../public/images/sections/Hero/hero-background-mobile.jpg");
-        background-size: cover;
         background-repeat: no-repeat;
         padding-top: 1.875rem;
         padding-bottom: 1.875rem;
+    }
+}
+.formboxCol {
+    @media screen and (max-width: 1280px) {
+        width: 100%;
     }
 }
 
@@ -25,14 +34,11 @@
     height: 100%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    @include for-size(alignFormBoxTablet) {
-        margin: 0;
+    @include for-size(backgroundAlignHeroTablet) {
+        margin-bottom: 0;
     }
     @include for-size(cardAlign) {
         margin-top: 0.9rem;
-    }
-    @include for-size(backgroundAlignMobile) {
-        margin-bottom: 0;
     }
 }
 
@@ -47,7 +53,11 @@
         background-image: none;
         padding: 0;
     }
-    @include for-size(backgroundAlignMobile) {
+    @include for-size(backgroundAlignHeroTablet) {
+        background-image: none;
+        padding: 0;
+    }
+    @include for-size(footerAlignMobile) {
         background-image: none;
         padding-left: 0;
         padding-right: 0;
@@ -57,7 +67,7 @@
 .mainInformationContainer {
     display: flex;
     flex-direction: column;
-    @include for-size(backgroundAlignTablet) {
+    @include for-size(backgroundAlignHeroTablet) {
         width: 85%;
         margin-left: auto;
         margin-right: auto;
@@ -95,7 +105,7 @@
     @include for-size(backgroundAlignMobile) {
         text-align: center !important;
     }
-    @include for-size(backgroundAlignTablet) {
+    @include for-size(backgroundAlignHeroTablet) {
         text-align: center;
     }
 }
@@ -110,6 +120,7 @@
     color: #ffffff;
     font-size: 1.125rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .infoItemContainer {
