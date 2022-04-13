@@ -1,6 +1,5 @@
 import React from 'react'
 import * as styles from './formbox-hero.module.scss';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 function FormboxHero() {
     return (
@@ -9,38 +8,38 @@ function FormboxHero() {
             <p className={styles.mainDescription}>Use our AI and Big Data driven call center sourcing solution</p>
             <form className={styles.form}>
                 <div className={styles.companyContainer}>
-                    <label for="company">Company</label>
+                    <label htmlFor="company_hero">Company</label>
                     <input
-                        id='company'
+                        id='company_hero'
                         type="text"
                         placeholder='Company'
                     />
                 </div>
                 <div className={styles.fullNameContainer}>
-                    <label for="full-name">Name</label>
+                    <label htmlFor="full-name_hero">Name</label>
                     <input
-                        id='full-name'
+                        id='full-name_hero'
                         type="text"
                         placeholder='Full Name'
                     />
                 </div>
                 <div className={styles.phoneContainer}>
-                    <label for="phone">Phone</label>
+                    <label htmlFor="phone_hero">Phone</label>
                     <div className={styles.phoneInputContainer}>
                         <select id="flags" name="flags">
-                            <option value="germany">Ger</option>
+                            <option value="germany">G</option>
                         </select>
                         <input
-                            id='phone'
+                            id='phone_hero'
                             type="text"
                             placeholder='+49'
                         />
                     </div>
                 </div>
                 <div className={styles.emailContainer}>
-                    <label for="email">Email</label>
+                    <label htmlFor="email_hero">Email</label>
                     <input
-                        id='email'
+                        id='email_hero'
                         type="text"
                         placeholder='name@mail.com'
                     />
