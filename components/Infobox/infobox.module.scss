@@ -1,0 +1,64 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+
+.infoboxContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3.25rem 4rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    @media screen and(max-width:470px) {
+        padding: 0;
+    }
+}
+
+.infoboxTitle {
+    font-size: 1.75rem;
+    color: $text_color;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.infoboxDescription {
+    font-size: 1.125rem;
+    color: $text_color;
+    text-align: center;
+    margin: 0 0.25rem 1.875rem 0.25rem;
+}
+
+.infoboxList {
+    margin-top: 2rem;
+    margin-left: 3.8rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    @include for-size(backgroundAlignHeroTablet) {
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 3rem;
+        grid-template-columns: min-content min-content;
+    }
+    @media screen and(max-width:470px) {
+        grid-template-columns: min-content;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2.8rem;
+    }
+}
+
+.label {
+    font-size: 1.125rem;
+    color: $text_color;
+}
+
+.answer {
+    font-size: 1.125rem;
+    color: $text_color;
+    font-weight: bold;
+}
+
+.line {
+    width: 98%;
+    height: 1px;
+    background-color: $navbar_mobile_border;
+}
