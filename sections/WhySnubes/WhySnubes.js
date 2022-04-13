@@ -8,7 +8,7 @@ function WhySnubes() {
     const background_ALIGN = 1024;
     const { width } = useWindowDimensions();
     return (
-        <Container fluid className={styles.container} as="section" id='whysnubes_section'>
+        <Container fluid id='whysnubes_section' className={styles.container} as="section">
             <div className={styles.textContainer}>
                 <Row className={width <= background_ALIGN ? 'flex-column' : 'flex-column align-items-center'}>
                     <Col className={styles.mainTitleContainer} xs={12} sm={12} md={6} lg={6}>

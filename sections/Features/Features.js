@@ -7,7 +7,7 @@ import * as styles from './features.module.scss'
 
 function Features() {
     return (
-        <Container className={styles.container}>
+        <Container id="features_section" className={styles.container} as="section">
             <Row>
                 {
                     featuresInformation.map((item, index) => (

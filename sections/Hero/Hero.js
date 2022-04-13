@@ -2,6 +2,7 @@ import React from 'react'
 import * as styles from './hero.module.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import FormboxHero from '../../components/FormboxHero/'
+import Infobox from '../../components/Infobox/Infobox'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 import { heroInformation } from '../../const/layout-data'
 
@@ -12,11 +13,12 @@ function Hero() {
     const { width } = useWindowDimensions();
 
     return (
-        <Container fluid className={styles.heroContainer}>
+        <Container fluid id='hero_section' className={styles.heroContainer} as='section'>
             <Container fluid={width >= background_ALIGN_MOBILE && width <= background_ALIGN} className={styles.heroContentContainer}>
                 <Row className={width >= background_ALIGN ? 'd-flex align-items-end' : 'd-flex flex-column align-items-center'}>
                     <Col className={styles.formboxCol} xs={12} sm={12} md={12} lg={12} xl={6}>
-                        <FormboxHero />
+                        {/* <FormboxHero /> */}
+                        <Infobox />
                     </Col>
                     <Col className={styles.informationCol} xs={12} sm={12} md={12} lg={4} xl={6}>
                         <div className={styles.mainInformationContainer}>
@@ -24,7 +26,7 @@ function Hero() {
                             <div className={styles.informationContainer}>
                                 {
                                     heroInformation.map((item, index) => (
-                                        <div key={item.label} className={styles.infoItemContainer}>
+                                        <div key={item.title} className={styles.infoItemContainer}>
                                             <h1 className={styles.title}>{item.title}</h1>
                                             <p className={styles.description}>{item.description}</p>
                                         </div>

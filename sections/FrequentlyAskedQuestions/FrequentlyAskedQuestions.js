@@ -9,7 +9,7 @@ function FrequentlyAskedQuestions() {
     const background_ALIGN = 1024;
     const { width } = useWindowDimensions();
     return (
-        <Container fluid={width <= background_ALIGN} className={styles.container} as="section" id='faq_section'>
+        <Container fluid={width <= background_ALIGN} id='faq_section' className={styles.container} as="section">
             <div className={styles.textContainer}>
                 <Row className={width <= background_ALIGN ? 'flex-column' : 'flex-column align-items-center'}>
                     <Col className={styles.mainTitleContainer} xs={10} sm={6} md={6} lg={10}>

@@ -6,7 +6,7 @@ import * as styles from "./testimonials.module.scss"
 
 function Testimonials() {
     return (
-        <Container fluid className={styles.container} as="section" id='testimonials_section'>
+        <Container fluid id='testimonials_section' className={styles.container} as="section">
             <Slider />
             <Companies />
         </Container>
