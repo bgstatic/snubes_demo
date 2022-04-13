@@ -30,9 +30,9 @@ const Header = () => {
                                 </li>
                             ) :
                                 (<li
-                                    key={item.url}
+                                    key={item.label}
                                 >
-                                    <Link href={item.url}>
+                                    <Link key={item.label} href={item.url}>
                                         {item.label}
                                     </Link>
                                 </li>)
@@ -66,7 +66,7 @@ const Header = () => {
                         <Nav className="justify-content-end flex-grow-1 pe-3">
                             {navigation.map((item) => (
                                 item.isDropdown ? (
-                                    <li key={item.url} className={styles.navDropdown}>
+                                    <li key={item.label} className={styles.navDropdown}>
                                         <NavDropdown title={item.label} className={styles.mobileNavDropdown} id="navbarScrollingDropdown">
                                             <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
                                             <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
@@ -74,7 +74,7 @@ const Header = () => {
                                     </li>
                                 ) :
                                     (<li
-                                        key={item.url}
+                                        key={item.label}
                                     >
                                         <Link href={item.url} className={styles.mobileNavItems}>
                                             {item.label}
