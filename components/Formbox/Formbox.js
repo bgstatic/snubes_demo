@@ -3,17 +3,17 @@ import * as styles from './formbox.module.scss'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 function Formbox() {
     const { width } = useWindowDimensions();
-    const background_ALIGN = 1024;
+    const background_ALIGN = 1210;
     const background_ALIGN_MOBILE = 576;
     return (
         <div className={styles.container}>
             <div className={styles.titleContainer}>
-                <h1 className={styles.title}>{(width < background_ALIGN && width >= background_ALIGN_MOBILE) ? "Find inbound call centers for your company" : "Find inbound call centers"}</h1>
+                <h1 className={styles.title}>{(width <= background_ALIGN && width >= background_ALIGN_MOBILE) ? "Find inbound call centers for your company" : "Find inbound call centers"}</h1>
             </div>
             <div className={styles.inputContainer}>
                 <form className={styles.form}>
                     <div className={styles.companyContainer}>
-                        <label for="company">Company</label>
+                        <label htmlFor="company">Company</label>
                         <input
                             id='company'
                             type="text"
@@ -21,7 +21,7 @@ function Formbox() {
                         />
                     </div>
                     <div className={styles.fullNameContainer}>
-                        <label for="full-name">Name</label>
+                        <label htmlFor="full-name">Name</label>
                         <input
                             id='full-name'
                             type="text"
@@ -29,7 +29,7 @@ function Formbox() {
                         />
                     </div>
                     <div className={styles.phoneContainer}>
-                        <label for="phone">Phone</label>
+                        <label htmlFor="phone">Phone</label>
                         <div className={styles.phoneInputContainer}>
                             <select id="flags" name="flags">
                                 <option value="germany">Ger</option>
@@ -42,7 +42,7 @@ function Formbox() {
                         </div>
                     </div>
                     <div className={styles.emailContainer}>
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input
                             id='email'
                             type="text"
