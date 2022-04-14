@@ -41,11 +41,11 @@ export const whySnubesInformation = [
 ]
 
 export const companies = [
-    { label: 'allianz', path: '/images/sections/Testimonials/allianz.jpg' },
-    { label: 'creditShelf', path: '/images/sections/Testimonials/creditshelf.jpg' },
-    { label: 'userCentrics', path: '/images/sections/Testimonials/usercentrics.jpg' },
-    { label: 'laserhub', path: '/images/sections/Testimonials/laserhub.jpg' },
-    { label: 'talixo', path: '/images/sections/Testimonials/talixo-gray.jpg' },
+    { label: 'allianz', path: '/images/sections/Testimonials/allianz.webp' },
+    { label: 'creditShelf', path: '/images/sections/Testimonials/creditshelf.webp' },
+    { label: 'userCentrics', path: '/images/sections/Testimonials/usercentrics.webp' },
+    { label: 'laserhub', path: '/images/sections/Testimonials/laserhub.webp' },
+    { label: 'talixo', path: '/images/sections/Testimonials/talixo-gray.webp' },
 ]
 
 export const frequentlyAskedQuestionsInformation = [

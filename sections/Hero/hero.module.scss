@@ -4,21 +4,21 @@
 .informationCol {
     background-size: cover;
     @include for-size(alignFormBoxTablet) {
-        background-image: url("../../public/images/sections/Hero/hero-background-tablet.jpg");
+        background-image: url("../../public/images/sections/Hero/hero-background-tablet.webp");
         background-repeat: no-repeat;
         padding-top: 2.8rem;
         padding-bottom: 2.8rem;
         width: 100%;
     }
     @include for-size(backgroundAlignHeroTablet) {
-        background-image: url("../../public/images/sections/Hero/hero-background-tablet.jpg");
+        background-image: url("../../public/images/sections/Hero/hero-background-tablet.webp");
         background-repeat: no-repeat;
         padding-top: 2.8rem;
         padding-bottom: 2.8rem;
         width: 100%;
     }
     @include for-size(backgroundAlignMobile) {
-        background-image: url("../../public/images/sections/Hero/hero-background-mobile.jpg");
+        background-image: url("../../public/images/sections/Hero/hero-background-mobile.webp");
         background-repeat: no-repeat;
         padding-top: 1.875rem;
         padding-bottom: 1.875rem;
@@ -43,7 +43,7 @@
 }
 
 .heroContainer {
-    background-image: url("../../public/images/sections/Hero/hero-background.jpg");
+    background-image: url("../../public/images/sections/Hero/hero-background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

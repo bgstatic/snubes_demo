@@ -31,7 +31,7 @@ function FrequentlyAskedQuestions() {
                             ))
                         }
                         <Col className={styles.bestOfInternet} xs={12} sm={12} md={6} lg={10}>
-                            <img src="/images/sections/FrequentlyAskedQuestions/best-of-internet.jpg" />
+                            <img src="/images/sections/FrequentlyAskedQuestions/best-of-internet.webp" alt="best-of-internet" />
                         </Col>
                     </Row>
                 </div>

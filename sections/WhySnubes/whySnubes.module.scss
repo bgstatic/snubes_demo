@@ -5,14 +5,14 @@
     display: flex;
     justify-content: center;
     @include for-size(backgroundAlignDesktop) {
-        background-image: url("../../public/images/sections/WhySnubes/background.jpg");
+        background-image: url("../../public/images/sections/WhySnubes/background.webp");
         background-repeat: no-repeat;
         background-size: contain;
         height: 37.5rem;
     }
 
     @include for-size(backgroundAlignTablet) {
-        background-image: url("../../public/images/sections/WhySnubes/background-mobile.jpg");
+        background-image: url("../../public/images/sections/WhySnubes/background-mobile.webp");
         background-repeat: no-repeat;
         background-size: 100%;
         padding-left: 0;
