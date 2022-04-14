@@ -9,8 +9,8 @@ import * as styles from '../styles/home.module.scss'
 
 const Layout = dynamic(() => import("../components/Layout"), { ssr: false });
 
-
 export default function Home() {
+
   return (
     <Layout>
       <Head>
