@@ -55,8 +55,6 @@
 
     div:not(.phoneInputContainer) {
         margin-top: 0.875rem;
-        margin-left: auto;
-        margin-right: auto;
         width: 70%;
         @include for-size(cardAlign) {
             display: flex;
@@ -67,6 +65,15 @@
 
     .phoneInputContainer {
         width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .phoneContainer {
+        @media screen and (min-width: 760px) {
+            display: flex;
+            align-items: center;
+        }
     }
     .companyContainer {
         @media screen and (min-width: 768px) {
@@ -78,28 +85,23 @@
         }
     }
 
-    input {
+    input:focus {
+        outline: none;
+    }
+
+    .correctInput {
         padding: 0.5rem;
         width: 100%;
         height: 3rem;
         border: 1px solid $navbar_mobile_border;
         border-radius: 4px;
     }
-    select {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        position: relative;
-        height: 3rem;
-        border: 1px solid $navbar_mobile_border;
-        border-radius: 4px;
-        margin-right: 0.5rem;
-    }
     label {
         color: $text_color;
         margin-bottom: 0.5rem;
         margin-right: 1rem;
     }
-    button {
+    button[type="submit"] {
         margin-top: 1.25rem;
         border-style: none;
         border-radius: 4px;
@@ -123,4 +125,12 @@
         color: $navbar_mobile_border;
         font-size: 1.125rem;
     }
+}
+
+.errorInput {
+    width: 100%;
+    padding: 0.5rem;
+    height: 3rem;
+    border: 1px solid red;
+    border-radius: 4px;
 }
