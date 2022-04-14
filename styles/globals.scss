@@ -123,6 +123,46 @@ a {
     opacity: 1 !important;
 }
 
+// React Flags Select Component
+
+.menu-flags {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-right: 10px;
+    width: fit-content !important;
+
+    ul[role="listbox"] {
+        width: max-content;
+        position: absolute;
+        top: 100%;
+    }
+}
+
+#rfs-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: 3rem;
+    min-width: 5rem;
+    border: 1px solid $navbar_mobile_border;
+    border-radius: 4px;
+    margin-right: 0.5rem !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23333' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 7.667L15.68 0.333' transform='translate(0 1)'/%3E%3Cpath d='M0.32 7.667L8 0.333' transform='translate(0 1) matrix(1 0 0 -1 0 8)'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: 18px;
+    background-color: #ffffff;
+}
+
+#rfs-btn::after {
+    border: none !important;
+}
+
 //Companies Section
 
 #companies-row {
