@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Container, Navbar, Nav, NavDropdown, Offcanvas, } from 'react-bootstrap'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
@@ -43,7 +43,7 @@ const Header = () => {
                     aria-controls="offcanvasNavbar"
                     onClick={() => setToggleMobileMenu(true)}
                 >
-                    <img loading="lazy" src={"/images/components/Navbar/navbar-toggle.svg"} alt="navbar-toggle" className={styles.logo} />
+                    <img loading="lazy" src={"/images/components/Navbar/navbar-toggle.svg"} alt="navbar-toggle" width={28} height={21} className={styles.logo} />
                 </Navbar.Toggle>
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"

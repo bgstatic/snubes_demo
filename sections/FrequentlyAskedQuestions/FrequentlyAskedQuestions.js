@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Context } from '../../context/context';
 import Formbox from '../../components/Formbox';
@@ -31,7 +31,7 @@ function FrequentlyAskedQuestions() {
                             ))
                         }
                         <Col className={styles.bestOfInternet} xs={12} sm={12} md={6} lg={10}>
-                            <img loading='lazy' src="/images/sections/FrequentlyAskedQuestions/best-of-internet.webp" alt="best-of-internet" />
+                            <img loading='' src="/images/sections/FrequentlyAskedQuestions/best-of-internet.webp" width={120} height={120} alt="best-of-internet" />
                         </Col>
                     </Row>
                 </div>

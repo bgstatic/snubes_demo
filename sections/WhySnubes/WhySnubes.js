@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import * as styles from './whySnubes.module.scss'
 import useWindowDimensions from '../../hooks/useWindowDimensions';

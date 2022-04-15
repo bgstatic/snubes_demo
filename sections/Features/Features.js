@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Card from '../../components/Card'
 import { featuresInformation } from '../../const/layout-data'

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { companies } from '../../const/layout-data'
 import useWindowDimensions from '../../hooks/useWindowDimensions'

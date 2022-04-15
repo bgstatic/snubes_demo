@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import * as styles from './hero.module.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Context } from '../../context/context'
