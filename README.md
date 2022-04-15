@@ -32,3 +32,15 @@ The main point of the project is testing Frontend Engineering skills including (
 - [Swiper](https://swiperjs.com/) Used for creating responsive carousel for testimonials section.
 - [react-flags-select](https://github.com/ekwonye-richard/react-flags-select#readme) Used for creating country flag select box.
 - [bundle-webpack-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) Used for detecting chunk's size for web optimization purposes. 
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the GPL License. See `LICENSE` for more information.
+
+## Contact
+
+- [@bilgehangecici](https://github.com/bilgehangecici)
+
+Project Link: [https://snubes-demo.vercel.app](https://snubes-demo.vercel.app/)
