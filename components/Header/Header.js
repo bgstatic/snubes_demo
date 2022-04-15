@@ -23,7 +23,7 @@ const Header = () => {
                         {navigation.map((item) => (
                             item.isDropdown ? (
                                 <li key={item.label} className={styles.navDropdown}>
-                                    <NavDropdown title={item.label} id="desktop_navbarScrollingDropdown">
+                                    <NavDropdown title={item.label} id={item.label}>
                                         <NavDropdown.Item id="action1_desktop" href="#action1">Action</NavDropdown.Item>
                                         <NavDropdown.Item id="action2_desktop" href="#action2">Another action</NavDropdown.Item>
                                     </NavDropdown>
@@ -67,7 +67,7 @@ const Header = () => {
                             {navigation.map((item) => (
                                 item.isDropdown ? (
                                     <li key={item.label} className={styles.navDropdown}>
-                                        <NavDropdown title={item.label} className={styles.mobileNavDropdown} id="mobile_navbarScrollingDropdown">
+                                        <NavDropdown title={item.label} className={styles.mobileNavDropdown} id={item.label}>
                                             <NavDropdown.Item id="action1_mobile" href="#action1">Action</NavDropdown.Item>
                                             <NavDropdown.Item id="action2_mobile" href="#action2">Another action</NavDropdown.Item>
                                         </NavDropdown>
