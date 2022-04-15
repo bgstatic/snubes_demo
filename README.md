@@ -11,3 +11,11 @@
   - [Built With](#built-with)
 - [License](#license)
 - [Contact](#contact)
+
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+The main point of the project is testing Frontend Engineering skills including (Responsive Design Concept, Web Optimizations, Essentials of Web Programming,  Advanced Frontend Development Frameworks etc.) 
+
