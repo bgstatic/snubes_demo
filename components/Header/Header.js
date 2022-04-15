@@ -15,7 +15,7 @@ const Header = () => {
             <Container fluid={width <= NAVBAR_ALIGN} className={styles.container}>
                 <Link href={'/'}>
                     <Navbar.Brand>
-                        <img src={width <= NAVBAR_ALIGN ? "/images/components/Navbar/snubes-logo-mobile.svg" : "/images/components/Navbar/snubes-logo.svg"} alt="Snubes" className={styles.logo} />
+                        <img loading='lazy' src={width <= NAVBAR_ALIGN ? "/images/components/Navbar/snubes-logo-mobile.svg" : "/images/components/Navbar/snubes-logo.svg"} alt="Snubes" className={styles.logo} />
                     </Navbar.Brand>
                 </Link>
                 <nav className={styles.navigation}>
@@ -43,7 +43,7 @@ const Header = () => {
                     aria-controls="offcanvasNavbar"
                     onClick={() => setToggleMobileMenu(true)}
                 >
-                    <img src={"/images/components/Navbar/navbar-toggle.svg"} alt="navbar-toggle" className={styles.logo} />
+                    <img loading="lazy" src={"/images/components/Navbar/navbar-toggle.svg"} alt="navbar-toggle" className={styles.logo} />
                 </Navbar.Toggle>
                 <Navbar.Offcanvas
                     id="offcanvasNavbar"

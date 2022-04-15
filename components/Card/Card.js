@@ -6,7 +6,7 @@ const Card = ({ title, description, logoSource }) => {
     return (
         <Container className={styles.container}>
             <div className={styles.cardImageContainer}>
-                <img src={logoSource} alt={title} className={styles.logo} />
+                <img loading='lazy' src={logoSource} alt={title} className={styles.logo} />
             </div>
             <div className={styles.cardTextContainer}>
                 <h1 className={styles.cardTitle}>{title}</h1>

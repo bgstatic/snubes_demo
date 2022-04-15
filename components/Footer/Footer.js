@@ -10,7 +10,7 @@ const Footer = () => {
             <Container className={styles.container}>
                 <Row className='d-flex w-100'>
                     <Col className={styles.bestOfInternetCol} sm={3} md={3} lg={3} xl={3}>
-                        <img src={"/images/sections/FrequentlyAskedQuestions/best-of-internet.webp"} alt="best-of-internet-service" width={120} height={120} />
+                        <img loading='lazy' src={"/images/sections/FrequentlyAskedQuestions/best-of-internet.webp"} alt="best-of-internet-service" width={120} height={120} />
                     </Col>
                     <Col className={styles.footerNavigation} sm={4} md={3} lg={3} xl={3}>
                         {
