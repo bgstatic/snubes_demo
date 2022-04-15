@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import dynamic from "next/dynamic";
 import Hero from '../sections/Hero';
 import Features from '../sections/Features/'
@@ -13,11 +12,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <Head>
-        <title>Snubes Demo</title>
-        <meta name="description" content="Snubes Demo" />
-        <link rel="icon" href="/snubes.ico" />
-      </Head>
       <Hero />
       <div className={styles.line}></div>
       <Features />
