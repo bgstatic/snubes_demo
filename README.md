@@ -28,7 +28,7 @@ The main point of the project is testing Frontend Engineering skills including (
 - [Context API](https://reactjs.org/docs/context.html) Used for State Management.
 - [Axios](https://axios-http.com/docs/intro) Used for fetching user's location information after having user's permission.
 - [Formik](https://formik.org/) Used for Form operations.
-- [Yup] (https://github.com/jquense/yup) Used for creating form validation schemas for Formik.
+- [Yup](https://github.com/jquense/yup) Used for creating form validation schemas for Formik.
 - [Swiper](https://swiperjs.com/) Used for creating responsive carousel for testimonials section.
 - [react-flags-select](https://github.com/ekwonye-richard/react-flags-select#readme) Used for creating country flag select box.
 - [bundle-webpack-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) Used for detecting chunk's size for web optimization purposes. 
