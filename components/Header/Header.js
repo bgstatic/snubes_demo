@@ -22,7 +22,7 @@ const Header = () => {
                     <Container className="d-none d-md-flex align-items-center" as="ul">
                         {navigation.map((item) => (
                             item.isDropdown ? (
-                                <li key={item.label} className={styles.navDropdown}>
+                                <li key={item.label} id={item.label} className={styles.navDropdown}>
                                     <NavDropdown title={item.label} id="navbarScrollingDropdown">
                                         <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
                                         <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
@@ -66,7 +66,7 @@ const Header = () => {
                         <Nav className="justify-content-end flex-grow-1 pe-3">
                             {navigation.map((item) => (
                                 item.isDropdown ? (
-                                    <li key={item.label} className={styles.navDropdown}>
+                                    <li key={item.label} id={item.label} className={styles.navDropdown}>
                                         <NavDropdown title={item.label} className={styles.mobileNavDropdown} id="navbarScrollingDropdown">
                                             <NavDropdown.Item href="#action1">Action</NavDropdown.Item>
                                             <NavDropdown.Item href="#action2">Another action</NavDropdown.Item>
