@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+<br />
+<p align="center">
+  <h3 align="center">Snubes FE Case Study</h3>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [License](#license)
+- [Contact](#contact)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<!-- ABOUT THE PROJECT -->
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## About The Project
 
-## Learn More
+The main point of the project is testing Frontend Engineering skills including (Responsive Design Concept, Web Optimizations, Essentials of Web Programming, Advanced Frontend Development Frameworks etc.) 
 
-To learn more about Next.js, take a look at the following resources:
+### Built With
+- [React](https://reactjs.org) 
+- [NextJS](https://nextjs.org/)
+- [Sass](https://sass-lang.com/) Used in component-level and section-level architecture with module structure.
+- [react-bootstrap](https://react-bootstrap.github.io/) Used for providing general responsive design and creating Navbar component.
+- [Saas-mixin](https://sass-lang.com/documentation/at-rules/mixin) Used for providing advanced responsive design.
+- [Context API](https://reactjs.org/docs/context.html) Used for State Management.
+- [Axios](https://axios-http.com/docs/intro) Used for fetching user's location information after having user's permission.
+- [Formik](https://formik.org/) Used for Form operations.
+- [Yup](https://github.com/jquense/yup) Used for creating form validation schemas for Formik.
+- [Swiper](https://swiperjs.com/) Used for creating responsive carousel for testimonials section.
+- [react-flags-select](https://github.com/ekwonye-richard/react-flags-select#readme) Used for creating country flag select box.
+- [bundle-webpack-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer) Used for detecting chunk's size for web optimization purposes. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- LICENSE -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+Distributed under the GPL License. See `LICENSE` for more information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [@bilgehangecici](https://github.com/bilgehangecici)
+
+Project Link: [https://snubes-demo.vercel.app](https://snubes-demo.vercel.app/)
