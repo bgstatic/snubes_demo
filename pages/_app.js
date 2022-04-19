@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Snubes Demo" />
         <link rel="icon" href="/snubes.ico" />
         <link
-          rel="preload"
-          href={"/images/sections/Hero/her-background.webp"}
+          rel="prefetch"
+          href={"/images/sections/Hero/hero-background.webp"}
           as="image"
         />
       </Head>
